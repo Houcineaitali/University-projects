@@ -1,0 +1,167 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project online store</title>
+    <link rel="stylesheet" href="forstyle.css">
+    <style>
+         body, ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        .navbar ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 0.5em;
+        }
+        .navbar ul li {
+            position: relative;
+        }
+      
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+      
+        .navbar ul li a:hover {
+            background-color: #575757;
+        }
+       
+        .navbar ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+        }
+        .navbar ul li:hover ul {
+            display: block;
+        }
+        .navbar ul li ul li a {
+            padding: 10px;
+            width: 150px;
+        }
+ .name  {
+            padding: 15px;
+            width: 280px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+        .form {
+            padding: 5px;
+           
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 50px;
+            text-align: center;
+        }
+        .form label {
+           font-size: 15px;
+           text-align: center; 
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           padding: 30px;
+        }
+        input {
+    border: 2pxX SOLID black ;
+    border-top: 0px;
+    border-left: 0px ; border-right: 0px;
+        }
+            .login-container {
+                background-color: white;
+                padding: 30px;
+                border-radius: 8px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                width: 300px;
+            }
+            h2 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            input[type="text"], input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+            input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+            .forgot-password {
+                text-align: center;
+                margin-top: 10px;
+            }
+            .forgot-password a {
+                color: #007BFF;
+                text-decoration: none;
+            }
+            .forgot-password a:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+   
+    <nav class="navbar">
+        <ul>
+            <li><a href="google.com">Home</a></li>
+            <li>
+                <a href="service.html">Services</a>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div>
+        <ul class="name">
+            <li>aymane aghenda</li>
+            <li>houcine ait ali</li>
+            <li>GENIE INFORMATIQUE</li>
+            <LI>PROF de Développement web</LI>
+        </ul>
+    </div>
+  
+        
+   
+    
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="/login" method="POST">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+    
+                <input type="submit" value="Login">
+            </form>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a><br>
+                  <a href="#">creat new account</a>
+            </div>
+        </div>
+    
+  
+    
+</body>
+</html>
